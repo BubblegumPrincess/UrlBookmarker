@@ -1,0 +1,80 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="favicon.ico">
+    <title>Bookmark Sites</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+
+  <body onload="fetchBookmarks()">
+
+    <header>
+      <div class="navbar navbar-dark bg-dark box-shadow">
+      	<div class="container d-flex justify-content-between">
+      		<a href="#" class="navbar-brand d-flex align-items-center"><strong>Personal Bookmarker</strong></a>
+      	</div>
+      </div>
+    </header>
+
+    <main role="main">
+
+      <section class="jumbotron text-center">
+        <div class="container">
+          <h2 class="jumbotron-heading">Welcome</h2>
+            <p class="lead text-muted">This page gives you the opportunity to bookmark you favorite websites</p>
+
+            <form id="myForm">
+          	  <div class="form-group card-body">
+          		<label>What's it called?</label>
+          		  <input type="text" class="form-control" id="siteName" placeholder="Website Name">
+          	  </div>
+          	  <div class="form-group card-body">
+          		<label>Where's it placed?</label>
+          		  <input type="text" class="form-control" id="siteURL" placeholder="Website URL">
+              </div>
+          	  <div class="card-body">
+                <button type="submit" class="btn btn-primary">Bookmark it!</button>
+          	  </div>
+          	</form>
+        </div>
+      </section>
+
+      <div class="jumbotron bg-light">
+      	<div class="container">
+          <div class="row">
+            <div class="col-auto">
+              <div id="bookmarksResults">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+    <footer class="text-muted p-lg-0">
+      <div class="container">
+        <p class="float-right">
+          <a href="#">Back to top</a>
+        </p>
+        <p>Making stuffs &copy; Askonya</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
